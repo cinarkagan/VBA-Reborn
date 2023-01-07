@@ -10,9 +10,10 @@ It will also have a well done documentation unlike VBA.
 > Bytecode interpreter/compiler  
 > Dissambler   
 > Documentation  
+> C++ Compiler  
 
 
 # TO-DO:
-   
-> C++ Compiler    
+
+> More to come in the future     
 
