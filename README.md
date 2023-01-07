@@ -5,10 +5,14 @@ It will also have a well done documentation unlike VBA.
 # DONE: 
 
 
+# DOING:
+
+> Bytecode interpreter/compiler  
+> Dissambler   
+> Documentation  
 
 
 # TO-DO:
-> Bytecode interpreter/compiler    
+   
 > C++ Compiler    
-> Dissambler   
-> Documentation   
+
