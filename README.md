@@ -8,7 +8,7 @@ It will also have a well done documentation unlike VBA.
 
 
 # TO-DO:
-> Bytecode interpreter/compiler
-> C++ Compiler
-> Dissambler
-> Documentation
+> Bytecode interpreter/compiler    
+> C++ Compiler    
+> Dissambler   
+> Documentation   
