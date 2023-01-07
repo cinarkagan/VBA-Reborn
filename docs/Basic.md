@@ -5,9 +5,13 @@
 > Set varName = "yes"  
 > Set varName = 50   
 
+# Commenting
+> 'This is a comment  
+> 'Any line that starts with an apostrophe(') is a comment
 
 # Printing
-> Echo varName  
+> Echo varName as Dim
+> Echo Hello World  
 
 
 

@@ -1,6 +1,9 @@
 import base64
 import sys
-def decompilee_file(filename):
+
+variables = []
+
+def decompile_file(filename):
     file = open(filename,"r")
     o = open("temp.vb","w")
     for i in file:
@@ -12,6 +15,34 @@ def decompilee_file(filename):
 
 def parse_line(line):
     line = line.strip()
+    #Commenting
+    if line.startswith("'"):
+        pass
+    else:
+        # Echo Function
+        if line.startswith("Echo "):
+            line = line.replace("Echo ","")
+            text_to_echo = ""
+            if line.endswith(" as Dim"):
+                line = line.replace(" as Dim","")
+                text_to_echo = variables[line]
+            else:
+                text_to_echo = line
+            print(text_to_echo)
+        # Dim
+        if line.startswith("Dim "):
+            line = line.replace("Dim ","")
+            var_to_def = line
+            variables[var_to_def] = ""
+        if line.startswith("Set "):
+            line = line.replace("Set ","")
+            line = line.split()
+            varName = line[0]
+            varVal = line[2]
+            # line[1] == '='
+            variables[varName] = varVal
+     
+
 
 if len(sys.argv) == 2:
     decompile_file(sys.argv[1])
