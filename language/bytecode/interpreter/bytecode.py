@@ -46,3 +46,7 @@ def parse_line(line):
 
 if len(sys.argv) == 2:
     decompile_file(sys.argv[1])
+    f = open("temp.vb")
+    for line in f:
+        parse_line(line)
+    os.system('del /f "temp.vb"')
