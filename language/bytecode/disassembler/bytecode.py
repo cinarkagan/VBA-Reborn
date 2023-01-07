@@ -8,7 +8,7 @@ def decompilee_file(filename):
         i_b1 = i.encode("ascii")
         i_base64_1 = base64.b64encode(i_b1)
         i_bytes = i_base64_1.decode("ascii")
-        o.write(i+"\n")
+        o.write(i_bytes+"\n")
 
 if len(sys.argv) == 2:
     decompile_file(sys.argv[1])

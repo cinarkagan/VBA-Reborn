@@ -11,7 +11,7 @@ def decompile_file(filename):
         i_b1 = i.encode("ascii")
         i_base64_1 = base64.b64encode(i_b1)
         i_bytes = i_base64_1.decode("ascii")
-        o.write(i+"\n")
+        o.write(i_bytes+"\n")
 
 def parse_line(line):
     line = line.strip()
